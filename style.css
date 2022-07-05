@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif, 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/*barra de navegacion para todas las paginas*/
+.navegacion {
+    display: flex;
+    padding: 20px;
+    height: 75px;
+}
+
+.navegacion ul {
+    position: relative;
+    left: 100px;
+    top: 20px;
+    font-size: 30px;
+}
+
+.navegacion ul li {
+    display: inline;
+    justify-content: space-between;
+    padding: 30px;
+    font-weight: 2000;
+}
+
+.logo a img {
+    width: 80px;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*seccion principal que ve el usuario */
+.paginaPrincipal {
+    background-color: rgb(254, 64, 50);
+    position: relative;
+    height: 600px;
+}
+
+.tituloPrincipal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 70px;
+}
+
+.parrafoPrincipal {
+    position: absolute;
+    right: 60px;
+    top: 190px;
+    text-align: justify;
+    margin: 10px 510px 100px 30px;
+    padding: 20px;
+    line-height: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.paginaPrincipal img {
+    position: absolute;
+    right: 40px;
+    top: 90px;
+}
+
+/*segunda seccion que muestra diferente media sobre los productos*/
+.nuestroProducto {
+    background-color: rgb(255, 198, 3);
+}
+
+.nuestroProducto h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.mediaNuestroProducto {
+    display: flex;
+
+}
+
+.mediaNuestroProducto img {
+    height: 500px;
+    padding: 20px;
+}
+
+.mediaNuestroProducto iframe {
+    height: 400px;
+    width: 600px;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+/*testimonios de clientes*/
+.contenedorTestimonios h3 {
+    font-size: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.testimonios{
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    align-items: baseline;
+    text-align: center;
+}
+
+.testimonio1 {
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.testimonio2 {
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonio3 {
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    text-align: center;
+    }
+
+
+.nombreTesti1, .nombreTesti2, .nombreTesti3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: large;
+} 
+
+.testimonios img{
+    height: 150px;
+    width: 150px;
+}
+
+/*Planes de pago*/
+.esquema {
+    background-color: rgb(83, 145, 202);
+    height: 430px;
+}
+
+.esquema h3 {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.esquema table {
+    background-color: aliceblue;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border: solid black ;
+    width: 290px;
+}
+
+th {
+    background-color: rgb(254, 164, 158);
+}
+
+/*footer para todas las paginas*/
+footer {
+    background-color: white;
+}
+
+.navFooter ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+    border-top: solid black 1px;
+}
+
+.redesSociales img {
+    height: 90px;
+    padding: 15px;
+    margin: 5px;
+} 
+
+/*pagina de subscripcion*/
+
+form {
+    margin: 0;
+    background-color: rgb(254, 64, 50);
+}
+
+.planSubscripcion {
+    font-size: 60px;
+    padding: 15px;
+} 
+
+legend {
+    font-size: 50px;
+}
+
+.formulario{
+    padding: 20px;
+}
+
+.tipodePlan{
+    padding-top: 15px;
+}
+
+.contenedorPreguntas {
+    background-color: rgb(82, 144, 201);
+}
+
+.preguntasFrecuentes {
+    padding: 15PX;
+}
+
+/*pagina de contacto*/
+
+.preguntanos {
+    padding: 15px;
+    font-size: 55px;
+}
+
+.formularioContacto {
+    margin: 0;
+    background-color: rgb(82, 144, 201);
+    padding: 15px;
+}
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBSCRIPCION</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Orelega+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--barra de nagevacion-->
+    <header class="banner">
+        <nav class="navegacion">
+            <ul>
+                <li> <a href="../index.html">HOME</a> </li>
+                <li> <a href="subscripcion.html">SUBSCRIPCION</a> </li>
+                <li> <a href="recursos.html">RECURSOS</a></li>
+                <li> <a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                <li> <a href="contacto.html">CONTACTO</a> </li>
+            </ul>
+            <div class="contenedorLogo">
+                <div class="logo">
+                    <div>
+                        <a href="../index.html"><img src="../media/logo.png" alt="logoRecursosOnline"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--planes de subscripcion para el usuario-->
+            <h1 class="planSubscripcion">Escoge un plan de subscripcion</h1>
+            <form action="">
+                <fieldset class="formulario">
+                    <legend> Datos de usuario</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
+                    <!-- Menu desplegable -->
+                    <!--no recuerdo por que puse dos tipos de plan como clase-->
+                    <label for="tipoDePlan"><h3 class="tipodePlan">Tipo de plan</h3></label>
+                    <select name="subscripcion" id="subscripcion">
+                        <option value="planesSubscripcion"> Seleccioná tu plan</option>
+                        <option value="stardard">Standard</option>
+                        <option value="premium">Premium</option>
+                        <option value="master">Master</option>
+                    </select>
+                    <!-- Checkbox -->
+                    <br>
+                    <br>
+                    <div> 
+                        <label for="tipoDeCuenta"><h4>Tipo de cuenta:</h4></label>
+                        <input type="radio" name="tipoDeCuenta">Personal
+                        <input type="radio" name="tipoDeCuenta">Empresarial
+                    </div>
+                    <br>
+                    <label for="terminosYcondiciones"> Terminos y condiciones </label>
+                    <br>
+                    <input type="radio" name="pais"> He leido y entiendo los terminos y condiciones
+                    <br>
+                    <!--Area para enviar comentarios -->
+                    <label for="comentario"> Envienos sus comentarios</label>
+                    <br>
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="10" maxlength="40" minlength="15"></textarea>
+                    <br>
+                    <input type="submit" value="Envia el formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </fieldset>
+            </form>
+            <!--preguntas frecuentes-->
+            <section class="contenedorPreguntas">
+                <ul class="preguntasFrecuentes">
+                    <h2>Preguntas Frecuentes</h2>
+                    <li class="pregunta1">¿Qué tipo de recursos son?</li>
+                    <li class="pregunta2">¿Cómo están organizadas y para qué publico es?</li>
+                    <li class="pregunta3">¿En qué idioma están escritos los recursos?</li> 
+                    <li class="pregunta4">¿Puedo acceder a todos los recursos desde mi celular</li>
+                    <li class="pregunta5">¿Puedo imprimir los recursos para trabajar offline?</li>
+                    <li class="pregunta6">¿Puedo utilizar todos los recursos de la página?</li>
+                </ul>
+            </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="subscripcion.html">Subscripcion</a> </li>
+                <li> <a href="recursos.html">Recursos</a></li>
+                <li> <a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+            </ul>
+            <div class="contendorRedesSociales">
+                <div class="redesSociales">
+                    <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
+                </div>
+            </div>
+        </nav>
+        <p>@2022 Recursos Online</p>
+    </footer>
+</body>
+</html>
