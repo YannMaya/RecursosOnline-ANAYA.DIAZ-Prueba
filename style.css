@@ -15,7 +15,7 @@ ul {
 
 /*barra de navegacion para todas las paginas*/
 .navegacion {
-    background-color: antiquewhite;
+    background-color: white;
     flex-direction: row-reverse;
     display: flex;
     padding: 20px;
