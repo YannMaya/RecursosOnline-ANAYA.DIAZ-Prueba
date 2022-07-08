@@ -99,7 +99,7 @@ h1{
 
     ul{
         margin: 20px 20px 30px 60px;
-        border: solid black;
+/*         border: solid black; */
     }
 
     ul li{
@@ -155,7 +155,7 @@ h1{
 
     ul{
         margin: 20px 20px 30px 60px;
-        padding: 0 20px 0 20px;
+        padding: auto;
         border: solid black;
     }
 
@@ -663,9 +663,9 @@ label{
 }
 
 @media only screen and (max-width: 480px){
-    h1{
+    .preguntanos{
+        background-color: rgb(82, 144, 201);
         font-size: 3rem;
-        padding: 10PX;
     }
 
     fieldset {
@@ -833,14 +833,13 @@ label{
     }
 
     .trabajador1 p{
-        background-color: aqua;
         font-size: 2rem;
         padding: 22px 25px 25px 25px;
     }
 
     .trabajador1 img{
-        height: 400px;
-        width: 100%;
+        height: 300px;
+        width: 70%;
     }
 
     .trabajador2{
@@ -850,14 +849,13 @@ label{
     }
 
     .trabajador2 p{
-        background-color: aqua;
         font-size: 2rem;
         padding: 22px 25px 25px 25px;
     }
 
     .trabajador2 img{
-        height: 400px;
-        width: 100%;
+        height: 300px;
+        width: 70%;
     }
 
     .trabajador3{
@@ -867,14 +865,13 @@ label{
     }
 
     .trabajador3 p{
-        background-color: aqua;
         font-size: 2rem;
         padding: 22px 25px 25px 25px;
     }
 
     .trabajador3 img{
-        height: 400px;
-        width: 100%;
+        height: 300px;
+        width: 70%;
     }
 
     .misionEmpresa .espacioVideo iframe{
@@ -986,4 +983,64 @@ label{
         font-size: 3rem;
         padding: 40px 45px 50px 45px;
     }
+}
+
+/* =======pagina de subscripcion =================*/
+
+.planSubscripcion{
+    background-color: rgb(255, 64, 51);
+}
+
+.contenedorPreguntas{
+    background-color: rgb(82, 144, 201);
+    padding: 25px;
+}
+
+.contenedorPreguntas ul{
+    font-size: 2rem;
+    display: inline;
+}
+
+.formularioSubscripcion{
+    padding: 20px;
+    margin: 20px;;
+}
+
+.formulario{
+    padding: 25px;
+}
+
+.tipodePlan{
+    text-align: start;
+    padding: 1px;
+}
+/* legend{
+    font-size: 1.4rem;
+    font-weight: bold;
+} */
+
+/* media queries para la pag de subscripcion */
+
+@media only screen and (max-width: 480px){
+
+    .subscripcionForm{
+        background-color: rgb(255, 64, 51);
+        margin: -20px;
+    } 
+
+    legend{
+        font-size: 1.4rem;
+        font-weight: bold;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 978px){
+    
+    .subscripcionForm{
+        background-color: rgb(255, 64, 51);
+        margin: -20px;
+
+    } 
 }
