@@ -12,6 +12,7 @@ html, body {
     height: 100px;
     width: 100px;
 }
+
 /* estilos del header */
 
 header{
@@ -55,7 +56,6 @@ a:hover {
     "texto  imagen";
     justify-items: center;
     align-items: center;
-    border: solid black 20px; /* solo por un momento para ver que es */
     margin-bottom: -100px;
 }
 
@@ -72,7 +72,6 @@ h1{
     font-size: 2rem;
     line-height: 45px;
     margin: 54px 20px 63px 49px;
-/*     border: solid black; */
 }
 
 .imagenPrincipal{
@@ -85,7 +84,7 @@ h1{
     padding-top: 70px;
 }
 
-/* media queries */
+/* media queries solo para el main*/
 /* telefono */
 @media only screen and (max-width: 480px) {
 
@@ -120,6 +119,7 @@ h1{
         font-size: 45px;
         line-height: 45px;
         margin: 94px 19px 63px 19px;
+        color: black;
     }
 
     .gridPadre{
@@ -142,11 +142,6 @@ h1{
 
 /* tablet */
 @media only screen and (min-width: 481px) and (max-width: 978px){
-/*     nav{
-        width: 86%;
-        margin: 0 25px 0 0;
-    } */
-    
 
     header{
         background-color: antiquewhite;
@@ -157,10 +152,6 @@ h1{
         align-items: center;
         font-size: 20px;
     }
-
-/*     body {
-        background-color: burlywood;
-    } */
 
     ul{
         margin: 20px 20px 30px 60px;
@@ -224,7 +215,6 @@ h1{
     /* el auto fit lo estoy tomando de un video de youtube para ver si despues se hacer responsive por si solo */
     grid-template-columns: repeat(6, 1fr) /* repeat(auto-fit, minmax(500px, auto)) */;
     grid-template-rows: auto;
-    grid-column-gap: 1rem;
 }
 .contenedor div{
     padding: 1rem;
@@ -234,7 +224,7 @@ h1{
 .productos{
     grid-column: 1 / span 6;
     grid-row: 1;
-    background-color: yellow;
+    background-color: rgb(255, 198, 4);
     display: flex;
 }
 
@@ -258,14 +248,12 @@ h1{
 }
 
 .productosFlex img{
-/*     background-color: blanchedalmond; */
     height: 500px;
     width: 100%;
     padding: 70px;
 }
 
 .productosFlex iframe{
-/*     border: solid rebeccapurple 40px; */
     height: 400px;
     width: 100%;
     padding: 20px;
@@ -298,7 +286,6 @@ h1{
     align-items: center;
 }
 
-
 .testigosFlex h3{
     flex: 100%;
     font-size: 5rem;
@@ -309,11 +296,11 @@ h1{
 .testimonio img{
     height: 300px;
     width: 300px;
-/*     background-color: blueviolet; */
 }
 
 .testigosFlex p{
     font-size: 1.5rem;
+    color: black;
 }
 
 .nombreTesti{
@@ -321,13 +308,15 @@ h1{
     font-weight: bold;
 }
 
-/* seccion con los planes de pago, no se si poner grid aca o flexbox */
 .esquema {
     grid-column: 1 / span 6;
     grid-row: 3;
     background-color: rgb(83, 145, 202);
     height: 450px;
-    border: 20px solid brown;
+}
+
+.esquema p{
+    color: black;
 }
 
 .esquema h3 {
@@ -354,7 +343,7 @@ h1{
     border: solid black 5px;
     text-align: center;
     border-radius: 2%;
-    background-color: chocolate;
+    background-color: whitesmoke;
     width: 100%;
 }
 
@@ -401,6 +390,7 @@ h1{
     grid-area: bene3;
 }
 
+/* media querie para la seccion de pagos */
 @media only screen and (max-width: 480px){
 
     .gridItem{
@@ -426,30 +416,15 @@ h1{
 }
 
 
-/* .esquema table {
-    background-color: aliceblue;
-    text-align: center;
-    width: 1000px;
-    margin: 0 auto;  este comando a veces centra todo, puede funcionar en ciertas situaciones
-    border-collapse: collapse;
-    font-size: 1.6rem;
-}
-
-th, td {
-    padding: 15px;
-    border: solid black ;
-    width: 290px;
-}
-
-th {
-    background-color: rgb(254, 164, 158);
-} */
-
-/* SEGUNDO INTENTO PARA EL FOOTER */
+/* FOOTER */
 
 footer{
-    background-color: salmon;
+    background-color: black;
     width: 100%;
+}
+
+footer a{
+    color: aliceblue;
 }
 
 .footerNav{
@@ -462,13 +437,11 @@ footer{
     display: flex;
     flex-direction: column;
     font-size: 2rem;
-    background-color: cyan;
     margin-right: 45px ;
 }
 
 .footerNav .redesSociales{
     display: flex;
-    background-color: cornflowerblue;
 }
 
 
@@ -494,48 +467,13 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer{
-    background-color: blueviolet;
-} */
-
-/* .footerNav{
-    width: 100%;
-}
-.footerNav ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-    margin: 20px;
+@media only screen and (min-width: 979px) {
+    .footerNav ul {
+        width: 100%;
+        margin: 15px;
+    }
 }
 
-.redesSociales{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: aqua;
+footer > p{
+    color: aliceblue
 }
-.redesSociales img {
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    padding-right: 157px;
-    margin: 0 auto;
-}
-.contendorRedesSociales img{
-    width: 100px;
-    height: 100px;
-} */
-
