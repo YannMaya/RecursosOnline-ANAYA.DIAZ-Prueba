@@ -19,7 +19,7 @@ header{
 }
 
 nav{
-    width: 70%;
+    width: 80%;
     margin: 0 25px 0 0;
 }
 
@@ -146,9 +146,9 @@ h1{
         font-size: 1.4rem;
     }
 
-    body {
+/*     body {
         background-color: burlywood;
-    }
+    } */
 
     ul{
         margin: 20px 20px 30px 60px;
@@ -187,8 +187,8 @@ h1{
     }
 
     .gridPadre img{
-        width: 800px;
-        height: 800px;
+        width: 300px;
+        height: 300px;
         padding-top: 70px;
     }
 }
@@ -221,7 +221,7 @@ h1{
     grid-column: 1 / span 6;
     grid-row: 1;
     background-color: yellow;
-    display: ;
+    display: flex;
 }
 
 /* flexbox para la seccion de productos */
@@ -246,14 +246,14 @@ h1{
 .productosFlex img{
 /*     background-color: blanchedalmond; */
     height: 500px;
-    width: 500px;
+    width: 100%;
     padding: 70px;
 }
 
 .productosFlex iframe{
 /*     border: solid rebeccapurple 40px; */
     height: 400px;
-    width: 500px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -315,7 +315,7 @@ h1{
 /* seccion con los planes de pago, no se si poner grid aca o flexbox */
 .esquema {
     background-color: rgb(83, 145, 202);
-    height: 390px;
+    height: 450px;
     border: 20px solid brown;
 }
 
@@ -325,11 +325,16 @@ h1{
     padding: 20px;
 }
 
-.esquema table {
+.esquema img{
+    width: 100%;
+    height: 300px;
+}
+
+/* .esquema table {
     background-color: aliceblue;
     text-align: center;
     width: 1000px;
-    margin: 0 auto;  /* este comando a veces centra todo, puede funcionar en ciertas situaciones */
+    margin: 0 auto;  este comando a veces centra todo, puede funcionar en ciertas situaciones
     border-collapse: collapse;
     font-size: 1.6rem;
 }
@@ -342,14 +347,34 @@ th, td {
 
 th {
     background-color: rgb(254, 164, 158);
-}
+} */
 
 /* SEGUNDO INTENTO PARA EL FOOTER */
 
-.footerNav{
-    justify-content: center;
-    
+footer{
+    background-color: salmon;
+    width: 100%;
 }
+
+.footerNav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: cyan;
+}
+
+.footerNav .redesSociales{
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+
 .redesSociales img{
     height: 100px;
     width: 100px;
@@ -357,15 +382,13 @@ th {
 }
 
 .redesSociales{
-    display: flex;
+    display: inline;
     justify-content: center;
-    align-items: center;
-    padding-left: 600px;
+/*     padding-left: 600px; */
 }
-.footerNav ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
+
+.footerNav ul a{
+    text-decoration: none;
 }
 
 
