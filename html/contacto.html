@@ -12,22 +12,16 @@
 </head>
 <body>
     <!--barra de navegacion-->
-    <header class="banner">
-        <nav class="navegacion">
+    <header>
+        <img src="../media/logo.png" class="logo" alt="logo">
+        <nav>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="subscripcion.html">SUBSCRIPCION</a></li>
+                <li><a href="subscripcion.html">SUBCRIPCION</a></li>
                 <li><a href="recursos.html">RECURSOS</a></li>
                 <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
-            <div class="contenedorLogo">
-                <div class="logo">
-                    <div>
-                        <a href="../index.html"><img src="../media/logo.png" alt="logoRecursosOnline"></a>
-                    </div>
-                </div>
-            </div>
         </nav>
     </header>
     <main>
@@ -300,20 +294,21 @@
                     <!-- Checkbox -->
                     <br>
                     <br>
-                    <div> 
+                    <div class="tipoDeUsuario"> 
                         <label for="tipoDeUsuario">Tipo de Usuario:</label>
-                        <input type="radio" name="tipoDeUsuario">Profesional
-                        <input type="radio" name="tipoDeUsuario">Amateur
-                        <input type="radio" name="tipoDeUsuario">Coorporativo
+                        <input type="radio" class="usuario" name="tipoDeUsuario">Profesional
+                        <input type="radio" class="usuario"name="tipoDeUsuario">Amateur
+                        <input type="radio" class="usuario"name="tipoDeUsuario">Coorporativo
                     </div>
                     <br>
                     <label for="terminosYcondiciones"> Terminos y condiciones </label>
                     <br>
-                    <input type="radio" name="pais"> He leido y entiendo los terminos y condiciones
                     <br>
-                    
+                    <input type="radio" class="terminos" name="pais"> He leido y entiendo los terminos y condiciones
+                    <br>
+                    <br>
                     <!--Area para enviar comentarios -->
-                    <label for="comentario"> Envienos sus comentarios</label>
+                    <label for="comentario"> Envíenos sus comentarios</label>
                     <br>
                     <textarea name="comentarios" id="comentarios" cols="40" rows="10" maxlength="40" minlength="15"></textarea>
                     <br>
@@ -324,23 +319,21 @@
     </main>
     <!--footer-->
     <footer>
-        <nav class="navFooter">
+        <nav class="footerNav">
             <ul>
-                <li> <a href="../index.html">Home</a> </li>
-                <li> <a href="subscripcion.html">Subscripcion</a> </li>
-                <li> <a href="recursos.html">Recursos</a></li>
-                <li> <a href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li> <a href="contacto.html">Contacto</a> </li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="html/subscripcion.html">Subscripcion</a></li>
+                <li><a href="html/recursos.html">Recursos</a></li>
+                <li><a href="html/sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
             </ul>
-            <div class="contendorRedesSociales">
-                <div class="redesSociales">
-                    <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
-                </div>
+            <div class="redesSociales">
+                <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
             </div>
         </nav>
-        <p>@2022 Recursos Online</p>
+            <p>@2022 Recursos Online</p>
     </footer>
 </body>
 </html>
