@@ -155,7 +155,7 @@ h1{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        font-size: 1.4rem;
+        font-size: 20px;
     }
 
 /*     body {
@@ -298,11 +298,6 @@ h1{
     align-items: center;
 }
 
-.esquema{
-    grid-column: 1 / span 6;
-    grid-row: 3;
-    background-color: aqua;
-}
 
 .testigosFlex h3{
     flex: 100%;
@@ -328,6 +323,8 @@ h1{
 
 /* seccion con los planes de pago, no se si poner grid aca o flexbox */
 .esquema {
+    grid-column: 1 / span 6;
+    grid-row: 3;
     background-color: rgb(83, 145, 202);
     height: 450px;
     border: 20px solid brown;
@@ -339,10 +336,95 @@ h1{
     padding: 20px;
 }
 
-.esquema img{
-    width: 100%;
+.contenedorTabla{
+    display: flex;
     height: 300px;
 }
+
+.tablaGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "plan1   plan2    plan3"
+    "precio1 precio2 precio3"
+    "bene1  bene2  bene3";
+    justify-items: center;
+    align-items: center;
+    border: solid black 5px;
+    text-align: center;
+    border-radius: 2%;
+    background-color: chocolate;
+    width: 100%;
+}
+
+
+.planPago1{
+    grid-area: plan1;
+    font-size: 2rem;
+}
+
+.planPago2{
+    grid-area: plan2;
+    font-size: 2rem;
+}
+
+.planPago3{
+    grid-area: plan3;
+    font-size: 2rem;
+}
+
+.tablaGrid p{
+    font-size: 1.2rem;
+}
+.precio1{
+    grid-area: precio1;
+}
+
+.precio2{
+    grid-area: precio2;
+}
+
+.precio3{
+    grid-area: precio3;
+}
+
+.beneficio1{
+    grid-area: bene1;
+}
+
+.beneficio2{
+    grid-area: bene2;
+}
+
+.beneficio3{
+    grid-area: bene3;
+}
+
+@media only screen and (max-width: 480px){
+
+    .gridItem{
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .tablaGrid p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 978px){
+
+    .gridItem{
+        width: auto;
+        font-size: 18px;
+    }
+
+    .tablaGrid p{
+        font-size: 1.3rem;
+    }
+}
+
 
 /* .esquema table {
     background-color: aliceblue;
@@ -381,6 +463,7 @@ footer{
     flex-direction: column;
     font-size: 2rem;
     background-color: cyan;
+    margin-right: 45px ;
 }
 
 .footerNav .redesSociales{
@@ -405,7 +488,11 @@ footer{
     text-decoration: none;
 }
 
-
+@media only screen and (min-width: 979px) {
+    .footerNav ul {
+        width: 100%;
+    }
+}
 
 
 
