@@ -13,7 +13,7 @@
 <body>
     <!--barra de navegacion-->
     <header>
-        <img src="../media/logo.png" class="logo" alt="logo">
+        <a href="../index.html"><img src="../media/logo.png" class="logo" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
@@ -27,18 +27,17 @@
     <main>
         <!--formulario para ponerse en contacto con la compania-->
         <h1 class="preguntanos">Pregúntanos más sobre nuestros productos</h1>
-        
-            <form action="" class="formularioContacto">
-                <fieldset class="formulario">
-                    <legend>Datos Personales</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+        <form action="" class="formularioContacto">
+            <fieldset class="formulario">
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
                     
-                    <!--menu desplegable con paises-->
-                    <label for="paises">Pais de origen</label>
-                    <select id="listadePaises" name="listadePaises">
+                <!--menu desplegable con paises-->
+                <label for="paises">Pais de origen</label>
+                <select id="listadePaises" name="listadePaises">
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -285,37 +284,37 @@
                         <option value="Zaire">Zaire</option>
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
+                </select>
+                <br>
+                <br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
                     
-                    <!-- Checkbox -->
-                    <br>
-                    <br>
-                    <div class="tipoDeUsuario"> 
-                        <label for="tipoDeUsuario">Tipo de Usuario:</label>
-                        <input type="radio" class="usuario" name="tipoDeUsuario">Profesional
-                        <input type="radio" class="usuario"name="tipoDeUsuario">Amateur
-                        <input type="radio" class="usuario"name="tipoDeUsuario">Coorporativo
-                    </div>
-                    <br>
-                    <label for="terminosYcondiciones"> Terminos y condiciones </label>
-                    <br>
-                    <br>
-                    <input type="radio" class="terminos" name="pais"> He leido y entiendo los terminos y condiciones
-                    <br>
-                    <br>
-                    <!--Area para enviar comentarios -->
-                    <label for="comentario"> Envíenos sus comentarios</label>
-                    <br>
-                    <textarea name="comentarios" id="comentarios" cols="40" rows="10" maxlength="40" minlength="15"></textarea>
-                    <br>
-                    <input type="submit" value="Envia el formulario">
-                    <input type="reset" value="Limpiar formulario">
-                </fieldset>
-            </form>
+                <!-- Checkbox -->
+                <br>
+                <br>
+                <div class="tipoDeUsuario"> 
+                    <label for="tipoDeUsuario">Tipo de Usuario:</label>
+                    <input type="radio" class="usuario" name="tipoDeUsuario">Profesional
+                    <input type="radio" class="usuario"name="tipoDeUsuario">Amateur
+                    <input type="radio" class="usuario"name="tipoDeUsuario">Coorporativo
+                </div>
+                <br>
+                <label for="terminosYcondiciones"> Terminos y condiciones </label>
+                <br>
+                <br>
+                <input type="radio" class="terminos" name="pais"> He leido y entiendo los terminos y condiciones
+                <br>
+                <br>
+                <!--Area para enviar comentarios -->
+                <label for="comentario"> Envíenos sus comentarios</label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="40" rows="10" maxlength="40" minlength="15"></textarea>
+                <br>
+                <input type="submit" value="Envia el formulario">
+                <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>
     </main>
     <!--footer-->
     <footer>
