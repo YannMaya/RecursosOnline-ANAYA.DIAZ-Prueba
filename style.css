@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Orelega One', cursive;
 }
 
 html, body {
@@ -72,6 +73,7 @@ h1{
     font-size: 2rem;
     line-height: 45px;
     margin: 54px 20px 63px 49px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .imagenPrincipal{
@@ -150,7 +152,7 @@ h1{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     ul{
@@ -249,7 +251,7 @@ h1{
 
 .productosFlex img{
     height: 453px;
-    width: 59%;
+    width: 83%;
     padding: 66px;
 }
 
@@ -284,6 +286,10 @@ h1{
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+.testimonio p{
+    font-family: 'Lucida Sans';
 }
 
 .testigosFlex h3{
@@ -510,7 +516,8 @@ footer > p{
 .recursos p{
     margin: 50px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family:'Lucida Grande';
 }
 
 .recursos .imagenFondo img{
@@ -575,7 +582,7 @@ footer > p{
         align-items: center;
         justify-items: center;
         align-content: center;
-        background-color: white;
+        background-color:rgb(255, 198, 4);
         padding-top: 40px;
         padding-bottom: 50px;
     }
@@ -750,6 +757,7 @@ label{
 .trabajador1 p{
     padding: 70px;
     font-size: 2rem;
+    font-family: 'Lucida Sans';
 }
 
 .trabajador2{
@@ -761,6 +769,7 @@ label{
 .trabajador2 p{
     padding: 70px;
     font-size: 2rem;
+    font-family: 'Lucida Sans';
 }
 
 .trabajador3{
@@ -772,6 +781,7 @@ label{
 .trabajador3 p{
     padding: 70px;
     font-size: 2rem;
+    font-family: 'Lucida Sans';
 }
 
 /* mision de la empresa */
@@ -780,7 +790,7 @@ label{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: silver;
 }
 
 .misionEmpresa h2{
@@ -799,9 +809,17 @@ label{
     padding: 20px 45px 50px 45px;
 }
 
+.apoyo p{
+    font-family: 'Lucida Sans';
+}
+
 .flexibilidad{
     font-size: 3rem;
     padding: 20px 45px 20px 45px;
+}
+
+.flexibilidad p{
+    font-family: 'Lucida Sans';
 }
 
 .colaboracion{
@@ -809,10 +827,17 @@ label{
     padding: 40px 45px 50px 45px;
 }
 
+.colaboracion p{
+    font-family: 'Lucida Sans';
+}
 /* media queries */
 /* mobile */
 @media only screen and (max-width: 480px){
     
+    .compania{
+        background-color: rgb(255, 64, 51);
+    }
+
     .misionEmpresa{
         display: flex;
         flex-direction: column;
@@ -820,7 +845,7 @@ label{
         background-color: silver;
         width: 100%;
     }
-    
+
     .misionEmpresa h2{
         font-size: 3.6rem;
         padding-top: 40px;
@@ -900,6 +925,10 @@ label{
 /* tablet */
 @media only screen and (min-width: 481px) and (max-width: 978px){
 
+    .compania{
+        background-color: rgb(255, 64, 51);
+    }
+    
     .misionEmpresa{
         display: flex;
         flex-direction: column;
@@ -921,9 +950,8 @@ label{
     }
 
     .trabajador1 p{
-        background-color: aqua;
         font-size: 2rem;
-        padding: 22px 25px 25px 25px;
+        padding: 15px 15px 15px 15px;
     }
 
     .trabajador1 img{
@@ -938,7 +966,6 @@ label{
     }
 
     .trabajador2 p{
-        background-color: aqua;
         font-size: 2rem;
         padding: 22px 25px 25px 25px;
     }
@@ -955,7 +982,6 @@ label{
     }
 
     .trabajador3 p{
-        background-color: aqua;
         font-size: 2rem;
         padding: 22px 25px 25px 25px;
     }
