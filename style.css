@@ -1,63 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Orelega One', cursive;
-}
 
 html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
-.logo{
-    height: 100px;
-    width: 100px;
-}
-
-/* estilos del header */
-
-header{
+.navEstilo{
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
 }
 
-nav{
-    width: 85%;
-    margin: 0 25px 0 0;
+.navbar{
+    --bs-navbar-color: rgba (0, 0, 0, 0);
+    --bs-navbar-hover-color: rgb(255, 64, 51);
+    --bs-navbar-nav-link-padding-x: 1.3rem;
 }
 
-ul{
-    justify-content: space-between;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+.navbar-collapse{
+    justify-content: end;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+.nav-link{
+    padding: 0 0px 0 10px;
 }
 
-a:hover {
-    color: brown;
+.textoPrincipal{
+    background-color: rgb(255, 64, 51) ;
 }
 
-/* ==================estilos main de HOME===============================================*/
-
-.gridPadre{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100px 500px;
-    grid-template-areas: 
-    "titulo titulo"
-    "texto  imagen";
-    justify-items: center;
-    align-items: center;
-    margin-bottom: -100px;
+.backgroundTitulo{
+    background-color: rgb(255, 64, 51);
 }
 
 h1{
@@ -67,275 +39,132 @@ h1{
     padding-top: 30px;
 }
 
-.parrafoPrincipal {
-    grid-area: texto;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 45px;
-    margin: 54px 20px 63px 49px;
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.areaPrincipal{
+    background-color: rgb(255, 64, 51);
 }
 
 .imagenPrincipal{
-    grid-area: imagen;
-}
-
-.gridPadre img{
-    width: 500px;
-    height: 500px;
-    padding-top: 70px;
-}
-
-/* media queries solo para el main*/
-/* telefono */
-@media only screen and (max-width: 480px) {
-
-    header{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 2.2rem;
-    }
-
-    ul{
-        margin: 20px 20px 30px 60px;
-/*         border: solid black; */
-    }
-
-    ul li{
-        align-content: center;
-    }
-
-    h1{
-        grid-area: titulo;
-        text-align: center;
-        font-size: 2.5rem;
-        padding-top: 10px;
-    }
-    
-    .parrafoPrincipal {
-        grid-area: texto;
-        text-align: center;
-        font-size: 45px;
-        line-height: 45px;
-        margin: 94px 19px 63px 19px;
-        color: black;
-    }
-
-    .gridPadre{
-        display: grid;
-        grid-template-areas: 
-        "titulo"
-        "texto"
-        "imagen";
-        grid-template-rows: 150px 300px auto;
-        grid-template-columns: 100%;
-        background-color: rgb(255, 64, 51);
-    }
-
-    .gridPadre img{
-        width: 400px;
-        height: 400px;
-        padding-top: 70px;
-    }
-}
-
-/* tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-
-    header{
-        background-color: white;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 17px;
-    }
-
-    ul{
-        margin: 20px 20px 30px 60px;
-        padding: 5px;
-/*         border: solid black; */
-    }
-
-    ul li{
-        align-content: center;
-    }
-
-    h1{
-        grid-area: titulo;
-        text-align: center;
-        font-size: 5rem;
-        padding-top: 10px;
-    }
-    
-    .parrafoPrincipal {
-        grid-area: texto;
-        text-align: center;
-        font-size: 45px;
-        line-height: 45px;
-        margin: 94px 19px 63px 19px;
-    }
-
-    .gridPadre{
-        display: grid;
-        grid-template-areas: 
-        "titulo"
-        "texto"
-        "imagen";
-        grid-template-rows: 150px 300px auto;
-        grid-template-columns: 100%;
-        background-color: rgb(255, 64, 51);
-    }
-
-    .gridPadre img{
-        width: 60%p;
-        height: 500px;
-        padding-top: 0px;
-        margin: -30px;
-    }
-}
-
-/* escritorio */
-@media only screen and (min-width: 979px) {
-    body {
-        background-color: rgb(255, 64, 51);
-    }
-}
-
-
-/* grid para las demas secciones */
-
-.contenedor {
-    display: grid;
-    max-width: 100%;
-    margin-top: 94px;
-    /* border: 9px solid black; */
-    /* el auto fit lo estoy tomando de un video de youtube para ver si despues se hacer responsive por si solo */
-    grid-template-columns: repeat(6, 1fr) /* repeat(auto-fit, minmax(500px, auto)) */;
-    grid-template-rows: auto;
-}
-.contenedor div{
-    padding: 1rem;
-}
-
-/* en mozilla la imagen y el video quedan en el misma fila, mientras que en chrome funciona bien, uno se coloca debajo del otro */
-.productos{
-    grid-column: 1 / span 6;
-    grid-row: 1;
-    background-color: rgb(255, 198, 4);
-    display: flex;
-}
-
-/* flexbox para la seccion de productos */
-.productosFlex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.productosFlex-item{
-    flex: 1;
-}
-
-.productosFlex h2{
-    flex: 100%;
-    font-size: 5rem;
-    justify-content: center;
+    background-color: rgb(255, 64, 51);
     text-align: center;
 }
 
-.productosFlex img{
-    height: 453px;
-    width: 83%;
-    padding: 66px;
+.textoPrincipal p{
+    background-color: rgb(255, 64, 51);
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 70px 20px 0 20px;
+    text-align: center;
 }
 
-.productosFlex iframe{
+.subtituloRecursos{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(255, 198, 4);
+    padding: 20px;
+}
+
+h2{
+    font-size: 1rem;
+    padding: 40px;
+}
+
+.imagenRecursos{
+    background-color:rgb(255, 198, 4);
+    
+}
+
+.imagenRecursos img:hover{
+    border: solid 4px salmon;
+}
+
+@media only screen and (max-width: 575){
+    
+    .imagenRecursos{
+        padding: 70px 20px 0 20px;
+    }
+}
+
+.videoRecursos{
+    background-color: rgb(255, 198, 4);
+}
+
+iframe{
     height: 400px;
     width: 100%;
+    padding: 20px; 
+}
+
+/* seccion para los testimonios */
+
+.tituloTestimonios{
+    align-items: center;
+    text-align: center;
+}
+
+.tituloTestimonios h3{ 
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.testimonios p{
+    margin-bottom: 35px;
+}
+
+.testimonios{
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.testimonios img{
+    padding: 40px 0 20px 0;
+    height: 330px;
+    width: 300px;
+    margin-top: 1px;
+}
+
+.testimonios .nombreTesti{
+    font-size: 1.4rem;
+    margin-top: -35px;
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px){
+    .imagenTesti3{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonios img{
+        height: 200px;
+        width: 200px;
+    } 
+}
+
+/* seccion para los esquemas de pago */
+.esquema{
+    background-color: rgb(82, 144, 201);
+    height: 420px;
+}
+
+h4{
+    font-size: 2.7rem;
     padding: 20px;
 }
 
-
-/* flexbox para la seccion de testigos */
-.testigos{
-    grid-column: 1 / span 6;
-    grid-row: 2;
-    background-color: white;
-}
-
-.testigosFlex{
+/* agregue este comando porque la seccion anterior se desbordaba y me dejaba un espacio en blanco a la derecha. Necesite de un buen rato para averiguar que saber que era */
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.testigosFlex div{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.testimonio {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonio p{
-    font-family: 'Lucida Sans';
-}
-
-.testigosFlex h3{
-    flex: 100%;
-    font-size: 5rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.testimonio img{
-    height: 300px;
-    width: 300px;
-}
-
-.testigosFlex p{
-    font-size: 1.5rem;
-    color: black;
-}
-
-.nombreTesti{
-    color: black;
-    font-weight: bold;
-}
-
-/*seccion para mostrar los planes de pago  */
-
-.esquema {
-    grid-column: 1 / span 6;
-    grid-row: 3;
-    background-color: rgb(83, 145, 202);
-    height: 450px;
-}
-
-.esquema p{
-    color: black;
-}
-
-.esquema h3 {
-    text-align: center;
-    font-size: 60px;
-    padding: 20px;
-}
-
-.contenedorTabla{
-    display: flex;
-    height: 300px;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-1.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
 .tablaGrid{
@@ -353,6 +182,7 @@ h1{
     border-radius: 2%;
     background-color: whitesmoke;
     width: 100%;
+    padding: 9px 20px 15px 16px;
 }
 
 .planPago1{
@@ -399,69 +229,76 @@ h1{
 
 /* media querie para la seccion de pagos */
 @media only screen and (max-width: 480px){
-
+    .esquema{
+        background-color: rgb(82, 144, 201);
+        height: 370px;
+    }
     .gridItem{
         width: auto;
         font-size: 1rem;
     }
-
     .tablaGrid p{
         font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 978px){
-
+    .esquema{
+        background-color: rgb(82, 144, 201);
+        height: 400px;
+    }
     .gridItem{
         width: auto;
         font-size: 18px;
     }
-
     .tablaGrid p{
         font-size: 1.3rem;
     }
 }
 
-
-/* FOOTER */
-
-footer{
-    background-color: black;
-    width: 100%;
+/* footer */
+.footNav{
+    background: rgb(1,16,94);
+    background: linear-gradient(90deg, rgba(1,16,94,1) 0%, rgba(148,32,90,1) 79%, rgba(255,44,87,1) 100%); ;
 }
 
 footer a{
     color: aliceblue;
+    text-decoration: none;
+    padding-right: 10px;
 }
 
-.footerNav{
+.footNav{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footerNav ul{
+.footNav ul{
     display: flex;
     flex-direction: column;
     font-size: 2rem;
     margin-right: 45px ;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 0 0 15px; 
 }
 
-.footerNav .redesSociales{
+.footNav .redesSociales{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 .redesSociales img{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     padding: 35px;
 }
 
 .redesSociales{
     display: inline;
     justify-content: center;
-/*     padding-left: 600px; */
 }
 
 .footerNav ul a{
@@ -492,583 +329,7 @@ footer a{
         width: 100%;
     }
 }
-footer > p{
+
+.footNav p{
     color: aliceblue
-}
-
-/*========================== PAGINA DE RECURSOS ===========================*/
-
-.recursos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: aliceblue;
-    padding-bottom: 30px
-}
-
-.recursos h1{
-    font-size: 8rem;
-}
-
-.recursos p{
-    margin: 50px;
-    text-align: center;
-    font-size: 2rem;
-    font-family:'Lucida Grande';
-}
-
-.recursos .imagenFondo img{
-    height: 500px;
-    width: 900px;
-    border: saddlebrown solid 9px;
-}
-
-.gridRecursos{
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: rgb(255, 198, 4);
-    padding-top: 40px;
-    padding-bottom: 50px;
-}
-
-.gridRecursos .recurso{
-    padding: 5px;
-}
-
-.gridRecursos .recurso img{
-    height: 300px;
-    width: 300px;
-    padding-left: 5px;
-}
-
-.recurso h3{
-    font-size: 1.5rem;
-}
-
-.gridRecursos .recurso p{
-    font-size: 1.1rem;
-}
-
-.gridRecursos .recurso p, h3{
-    text-align: center
-}
-
-.gridRecursos .recurso4 .recurso5 .recurso6{
-    padding-top: 200px;
-}
-
-.gridRecursos .recurso4 img{
-    padding-left: 25px;
-}
-
-/* media queries para la pagina de recursos */
-/* mobile */
-@media only screen and (max-width: 480px){
-    .gridRecursos{
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 1fr;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-        background-color:rgb(255, 198, 4);
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .recursos h1{
-        font-size: 5rem;
-    }
-    .recursos .imagenFondo{
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .recursos .imagenFondo img{
-        width: 80%;
-        height: 80%;
-    }
-
-    .footerNav ul{
-        display: flex;
-        flex-direction: column;
-        font-size: 2rem;
-        margin-left: 10px;
-    }
-}
-
-/* tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    .gridRecursos{
-        display: grid;
-        grid-gap: 30px;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-        background-color: rgb(255, 198, 4);
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .recursos h1{
-        font-size: 5rem;
-    }
-    .recursos .imagenFondo{
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .recursos .imagenFondo img{
-        width: 80%;
-        height: 80%;
-    }
-
-    .footerNav ul{
-        display: flex;
-        flex-direction: column;
-        font-size: 2rem;
-        margin-left: 10px;
-    }
-}
-
-/*================ PAGINA DE CONTACTO ===========================*/
-
-.preguntanos{
-    background-color: rgb(82, 144, 201);
-    font-size: 6rem;
-}
-
-.formularioContacto{
-    background-color: rgb(82, 144, 201);
-    padding: 20px;
-}
-
-.formulario{
-    padding: 25px;
-}
-
-legend{
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-label{
-    font-size: 1.1rem;
-}
-
-/* media queries */
-/* mobile */
-@media only screen and (max-width: 480px){
-    .preguntanos{
-        background-color: rgb(82, 144, 201);
-        font-size: 3rem;
-    }
-
-    fieldset {
-        position: relative;
-    }
-    
-    legend{
-        font-size: 1.4rem;
-        font-weight: bold;
-        bottom: 0;
-        right: 0;
-    }
-}
-
-/* tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    h1{
-        font-size: 4rem;
-        padding: 5PX;
-    }
-
-    fieldset {
-        position: relative;
-    }
-    
-
-    .formulario label{
-        font-size: 2rem;
-    }
-
-    #listadePaises{
-        font-size: 1rem;
-    }
-
-    .usuario{
-        font-size: 2rem;
-    }
-
-    .formularioContacto{
-        background-color: rgb(82, 144, 201);
-        padding: 20px;
-    }
-    
-    .formulario{
-        padding: 15px;
-    }
-    
-    legend{
-        font-size: 1.4rem;
-        font-weight: bold;
-        bottom: 0;
-        right: 0;
-    }
-    
-    label{
-        font-size: 1.1rem;
-    }
-}
-
-/*================ pagina sobre nosotros ====================*/ 
-
-.cover h1{
-    font-size: 5rem;
-}
-
-.personal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.trabajador1{
-    display: flex;
-    align-items: center;
-    padding: 100px;
-}
-
-.trabajador1 p{
-    padding: 70px;
-    font-size: 2rem;
-    font-family: 'Lucida Sans';
-}
-
-.trabajador2{
-    display: flex;
-    align-items: center;
-    padding: 100px;
-}
-
-.trabajador2 p{
-    padding: 70px;
-    font-size: 2rem;
-    font-family: 'Lucida Sans';
-}
-
-.trabajador3{
-    display: flex;
-    align-items: center;
-    padding: 100px;
-}
-
-.trabajador3 p{
-    padding: 70px;
-    font-size: 2rem;
-    font-family: 'Lucida Sans';
-}
-
-/* mision de la empresa */
-
-.misionEmpresa{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: silver;
-}
-
-.misionEmpresa h2{
-    font-size: 5rem;
-    padding: 15px;
-}
-
-.misionEmpresa .espacioVideo iframe{
-    height: 500px;
-    width: 800px;
-    padding: 30px;
-}
-
-.apoyo{
-    font-size: 3rem;
-    padding: 20px 45px 50px 45px;
-}
-
-.apoyo p{
-    font-family: 'Lucida Sans';
-}
-
-.flexibilidad{
-    font-size: 3rem;
-    padding: 20px 45px 20px 45px;
-}
-
-.flexibilidad p{
-    font-family: 'Lucida Sans';
-}
-
-.colaboracion{
-    font-size: 3rem;
-    padding: 40px 45px 50px 45px;
-}
-
-.colaboracion p{
-    font-family: 'Lucida Sans';
-}
-/* media queries */
-/* mobile */
-@media only screen and (max-width: 480px){
-    
-    .compania{
-        background-color: rgb(255, 64, 51);
-    }
-
-    .misionEmpresa{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: silver;
-        width: 100%;
-    }
-
-    .misionEmpresa h2{
-        font-size: 3.6rem;
-        padding-top: 40px;
-        
-    }
-    
-    .trabajador1{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador1 p{
-        font-size: 2rem;
-        padding: 22px 25px 25px 25px;
-    }
-
-    .trabajador1 img{
-        height: 300px;
-        width: 70%;
-    }
-
-    .trabajador2{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador2 p{
-        font-size: 2rem;
-        padding: 22px 25px 25px 25px;
-    }
-
-    .trabajador2 img{
-        height: 300px;
-        width: 70%;
-    }
-
-    .trabajador3{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador3 p{
-        font-size: 2rem;
-        padding: 22px 25px 25px 25px;
-    }
-
-    .trabajador3 img{
-        height: 300px;
-        width: 70%;
-    }
-
-    .misionEmpresa .espacioVideo iframe{
-        height: 300px;
-        width: 90%;
-        padding: 20px;
-    }
-    
-    .apoyo{
-        font-size: 2rem;
-        padding: 20px 45px 20px 45px;
-    }
-
-    .flexibilidad{
-        font-size: 2rem;
-        padding: 20px 45px 20px 45px;
-    }
-    
-    .colaboracion{
-        font-size: 2rem;
-        padding: 40px 45px 50px 45px;
-    }
-}
-
-/* tablet */
-@media only screen and (min-width: 481px) and (max-width: 978px){
-
-    .compania{
-        background-color: rgb(255, 64, 51);
-    }
-    
-    .misionEmpresa{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: silver;
-        width: 100%;
-    }
-    
-    .misionEmpresa h2{
-        font-size: 3.6rem;
-        padding-top: 40px;
-        
-    }
-    
-    .trabajador1{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador1 p{
-        font-size: 2rem;
-        padding: 15px 15px 15px 15px;
-    }
-
-    .trabajador1 img{
-        height: 500px;
-        width: 60%;
-    }
-
-    .trabajador2{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador2 p{
-        font-size: 2rem;
-        padding: 22px 25px 25px 25px;
-    }
-
-    .trabajador2 img{
-        height: 500px;
-        width: 60%;
-    }
-
-    .trabajador3{
-        display: flex;
-        flex-direction: column;
-        padding: 42px 15px 15px 15px;
-    }
-
-    .trabajador3 p{
-        font-size: 2rem;
-        padding: 22px 25px 25px 25px;
-    }
-
-    .trabajador3 img{
-        height: 500px;
-        width: 60%;
-    }
-
-    .misionEmpresa .espacioVideo iframe{
-        height: 500px;
-        width: 90%;
-        padding: 20px;
-    }
-    
-    .apoyo{
-        font-size: 3rem;
-        padding: 20px 45px 20px 45px;
-    }
-
-    .flexibilidad{
-        font-size: 3rem;
-        padding: 20px 45px 20px 45px;
-    }
-    
-    .colaboracion{
-        font-size: 3rem;
-        padding: 40px 45px 50px 45px;
-    }
-}
-
-/* ================pagina de subscripcion =================*/
-
-.planSubscripcion{
-    background-color: rgb(255, 64, 51);
-}
-
-.contenedorPreguntas{
-    background-color: rgb(82, 144, 201);
-    padding: 25px;
-}
-
-.contenedorPreguntas ul{
-    font-size: 2rem;
-    display: inline;
-}
-
-.formularioSubscripcion{
-    padding: 20px;
-    margin: 20px;;
-}
-
-.formulario{
-    padding: 25px;
-}
-
-.tipodePlan{
-    text-align: start;
-    padding: 1px;
-}
-/* legend{
-    font-size: 1.4rem;
-    font-weight: bold;
-} */
-
-/* media queries para la pag de subscripcion */
-
-@media only screen and (max-width: 480px){
-
-    .subscripcionForm{
-        background-color: rgb(255, 64, 51);
-        margin: -20px;
-    } 
-
-    legend{
-        font-size: 1.4rem;
-        font-weight: bold;
-        bottom: 0;
-        right: 0;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    
-    .subscripcionForm{
-        background-color: rgb(255, 64, 51);
-        margin: -20px;
-
-    } 
 }

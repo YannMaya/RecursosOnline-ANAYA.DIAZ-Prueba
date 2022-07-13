@@ -4,66 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesor Online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css propio -->
+    <link rel="stylesheet" href="style.css">
+    <title>Asesor Online</title>
 </head>
 <body>
     <!--barra de navegacion-->
     <header>
-        <a href="index.html"><img src="media/logo.png" class="logo" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="html/subscripcion.html">SUBSCRIPCION</a></li>
-                <li><a href="html/recursos.html">RECURSOS</a></li>
-                <li><a href="html/sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="html/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  navEstilo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="media/logo.png" alt="logo" class="img-fluid" width="100" height="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">Subscripcion</a>
+                        <a class="nav-link" href="#">Recursos</a>
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- seccion principal -->
-    <main class="gridPadre">
-        <h1>BIENVENIDO</h1>
-        <P class="parrafoPrincipal">Somos la solución que necesitas para que puedas alcanzar cualquiera de tus objetivos. Somos rápidos, eficientes y tenemos pasión por lo que hacemos. 
-        </P>
-        <img src="media/imagenPrincipal.png" class="imagenPrincipal" alt="imagenPrincipal">
-    </main>
-    <!-- seccion con media de los productos -->
-    <section class="contenedor">
-        <div class="productos productosFlex">
-            <h2 class="productosFlex-item">Nuestro Producto</h2>
-            <img src="media/imagenProducto1.png" class="productosFlex-item" alt="imagenDeProducto1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ycs7gq_fRcA" class="productosFlex-item" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <!--Seccion con los testimonios de clientes  -->
-        <div class="testigos">
-            <div class="testigosFlex">
-                <h3>Lo que dicen de nosotros</h3>
-                <div class="testimonio testigo1">
-                    <img src="media/testimonio1.png" alt="testimonio1">
-                    <p>"Me he ahorrado mucho tiempo en crear mis propios recursos. Esta herramienta es increible".</p>
-                    <p class="nombreTesti">Sergio Cruz</p>
-                </div>
-                <div class="testimonio testigo2">
-                    <img src="media/testimonio2.png" alt="testimonio2">
-                    <p> "No podria estar mas feliz. Tengo ahora mas tiempo para dedicarme a otras areas de mi trabajo que son mas demandantes".</p>
-                    <p class="nombreTesti">Celia Ramos</p>
-                </div>
-                <div class="testimonio testigo3">
-                    <img src="media/testimonio3.png" alt="testimonio3">
-                    <p> "Simplemente lo que necesitaba".</p>
-                    <p class="nombreTesti">Margaret Williams</p>
-                </div>
+    <main class="container-fluid" >
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 backgroundTitulo"> 
+                <h1 class="animate__animated animate__headShake animate__delay-1s animate__infinite" style="font-size: 12vw;" >BIENVENIDO</h1>
             </div>
         </div>
-        <!-- seccion con los esquemas de pago -->
-        <div class="esquema">
-            <h3>PAQUETES</h3>
-            <div class="contenedorTabla">
-                <div class="tablaGrid">
+        <div class="row main">
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 textoPrincipal"> 
+                <p data-aos="fade-left">Somos la solución que necesitas para que puedas alcanzar cualquiera de tus objetivos. Somos rápidos, eficientes y tenemos pasión por lo que hacemos</p>
+            </div>
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagenPrincipal"> 
+                <img src="media/imagenPrincipal.png" class="img-fluid" data-aos="fade-right" alt="imagenprincipal">
+            </div>
+        </div>
+        <!-- seccion para productos -->
+        <div class="row productos">
+            <div class="col col-12 col-lg-12 col-md-12 col-sm-12 subtituloRecursos"> 
+                <h2 class="animate__animated animate__headShake animate__delay-1s animate__infinite" style="font-size: 5vw;">NUESTROS PRODUCTOS</h2>
+            </div>
+        </div>
+        <div class="row recursos">
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagenRecursos"> 
+                <img src="media/imagenProducto1.png" class="img-fluid imagenRecursos" data-aos="fade-up"alt="producto">
+            </div>
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 videoRecursos embed-responsive embed-responsive-16by9" > <!--  -->
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Ycs7gq_fRcA" title="YouTube video player" data-aos="fade-up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- seccion testimonios -->
+        <div class="row tituloTestimonios">
+            <div class="col col-12 col-lg-12 col-md-12 col-sm-12 testimonios"> 
+                <h3 class="animate__animated animate__headShake animate__delay-1s animate__infinite">Lo que dicen de nosotros</h3>
+            </div>
+        <div class="row testimonios">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-12 testimonio1"> 
+                <img src="media/testimonio1.png" class="img-fluid" alt="testimonio1">
+                    <p data-aos="fade-up">"Me he ahorrado mucho tiempo en crear mis propios recursos. Esta herramienta es increible".</p>
+                    <p data-aos="fade-up" class="nombreTesti"><b>Sergio Cruz</b></p>
+            </div>
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-12 testimono2"> 
+                <img src="media/testimonio2.png" class="img-fluid" alt="testimonio2">
+                    <p data-aos="fade-up"> "No podria estar mas feliz. Tengo ahora mas tiempo para dedicarme a otras areas de mi trabajo que son mas demandantes".</p>
+                    <p data-aos="fade-up" class="nombreTesti"><b>Celia Ramos</b></p>
+            </div>
+            <div class="col col-12 col-lg-4 col-md-12 col-sm-12 testimonio3"> 
+                <img src="media/testimonio3.png" class="img-fluid imagenTesti3" alt="testimonio3">
+                    <p data-aos="fade-up"> "Simplemente lo que necesitaba".</p>
+                    <p data-aos="fade-up" class="nombreTesti"><b>Margaret Williams</b></p>
+            </div>
+        </div>
+        <!-- seccion de planes de pago -->
+        <div class="row">
+            <div class="col col-12 col-lg-12 col-md-12 col-sm-12 esquema">
+                <h4 class="animate__animated animate__headShake animate__delay-1s animate__infinite">PLANES DE PAGO</h4>
+                <div data-aos="fade-up" class="tablaGrid">
                     <h4 class="planPago1 gridItem">STANDARD</h4>
                     <h4 class="planPago2 gridItem">PREMIUM</h4>
                     <h4 class="planPago3 gridItem">MASTER</h4>
@@ -76,24 +104,33 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- footer -->
     <footer>
-        <nav class="footerNav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/subscripcion.html">Subscripcion</a></li>
-                <li><a href="html/recursos.html">Recursos</a></li>
-                <li><a href="html/sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="redesSociales">
-                <a href="#"><img src="media/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="media/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="media/tiktok.png" alt="tiktok"></a>
+        <div class="row ">
+            <div class="col footNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/subscripcion.html">Subscripcion</a></li>
+                    <li><a href="html/recursos.html">Recursos</a></li>
+                    <li><a href="html/sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="redesSociales">
+                    <a href="#"><img src="media/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="media/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="media/tiktok.png" alt="tiktok"></a>
+                </div>
+            </nav>
+                <p>@2022 Recursos Online</p>
             </div>
-        </nav>
-            <p>@2022 Recursos Online</p>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
