@@ -4,6 +4,7 @@ html, body {
     overflow-x: hidden !important;
 }
 
+/* barra de navegacion  */
 .navEstilo{
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -23,6 +24,8 @@ html, body {
 .nav-link{
     padding: 0 0px 0 10px;
 }
+
+/* seccion principal */
 
 .textoPrincipal{
     background-color: rgb(255, 64, 51) ;
@@ -56,6 +59,8 @@ h1{
     text-align: center;
 }
 
+
+/* seccion para productos */
 .subtituloRecursos{
     justify-content: center;
     align-items: center;
@@ -63,23 +68,29 @@ h1{
     justify-items: center;
     text-align: center;
     background-color: rgb(255, 198, 4);
-    padding: 20px;
+    padding: 20px 0 30px 0;
 }
+
 
 h2{
     font-size: 1rem;
-    padding: 40px;
+    padding: 20px;
 }
 
 .imagenRecursos{
     background-color:rgb(255, 198, 4);
-    
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .imagenRecursos img:hover{
     border: solid 4px salmon;
 }
 
+.videoRecursos{
+    padding-bottom: 25px;
+    padding-right: 34px;
+}
 @media only screen and (max-width: 575){
     
     .imagenRecursos{
@@ -110,8 +121,11 @@ iframe{
     font-size: 4rem;
 }
 
-.testimonios p{
-    margin-bottom: 35px;
+.testimonios div{
+    margin-bottom: 15px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .testimonios{
@@ -120,21 +134,35 @@ iframe{
 }
 
 .testimonios img{
-    padding: 40px 0 20px 0;
+    padding: 0 0 20px 0;
     height: 330px;
-    width: 300px;
+    width: 330px;
     margin-top: 1px;
 }
 
 .testimonios .nombreTesti{
     font-size: 1.4rem;
-    margin-top: -35px;
+}
+
+.testimonios .nombreTesti2{
+    font-size: 1.4rem;
+    margin-top: -10px;
+}
+
+.testimonios .nombreTesti{
+    font-size: 1.4rem;
+    margin-top: -10px;
 }
 
 @media only screen and (min-width:768px) and (max-width: 992px){
-    .imagenTesti3{
-        height: 250px;
+    /* .imagenTesti3{ "no recuerdo que hubiera esta clase"
+        height: 300px;
         width: 250px;
+    } */
+    .testimonios img{
+        height: 300px;
+        width: 300px;
+        padding: 5px;
     }
 }
 
@@ -145,7 +173,7 @@ iframe{
     } 
 }
 
-/* seccion para los esquemas de pago */
+/* =====seccion para los esquemas de pago==== */
 .esquema{
     background-color: rgb(82, 144, 201);
     height: 420px;
@@ -156,16 +184,19 @@ h4{
     padding: 20px;
 }
 
-/* agregue este comando porque la seccion anterior se desbordaba y me dejaba un espacio en blanco a la derecha. Necesite de un buen rato para averiguar que saber que era */
-.row {
-    --bs-gutter-x: 1.5rem;
+.esquema h4{
+    text-align: center;
+}
+/* agregue el comando de abajo porque la seccion anterior se desbordaba y me dejaba un espacio en blanco a la derecha. Necesite de un buen rato para averiguar que saber que era */
+/* .row {
+    --bs-gutter-x: 1.2rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-1.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
-}
+} */
 
 .tablaGrid{
     display: grid;
@@ -179,24 +210,23 @@ h4{
     align-items: center;
     border: solid black 5px;
     text-align: center;
-    border-radius: 2%;
     background-color: whitesmoke;
-    width: 100%;
-    padding: 9px 20px 15px 16px;
+    width: 95%;
+    box-sizing: border-box;
 }
 
 .planPago1{
-    grid-area: plan1;
+    grid-area: "plan1";
     font-size: 2rem;
 }
 
 .planPago2{
-    grid-area: plan2;
+    grid-area: "plan2";
     font-size: 2rem;
 }
 
 .planPago3{
-    grid-area: plan3;
+    grid-area: "plan3";
     font-size: 2rem;
 }
 
@@ -204,27 +234,27 @@ h4{
     font-size: 1.2rem;
 }
 .precio1{
-    grid-area: precio1;
+    grid-area: "precio1";
 }
 
 .precio2{
-    grid-area: precio2;
+    grid-area: "precio2";
 }
 
 .precio3{
-    grid-area: precio3;
+    grid-area: "precio3";
 }
 
 .beneficio1{
-    grid-area: bene1;
+    grid-area: "bene1";
 }
 
 .beneficio2{
-    grid-area: bene2;
+    grid-area: "bene2";
 }
 
 .beneficio3{
-    grid-area: bene3;
+    grid-area: "bene3";
 }
 
 /* media querie para la seccion de pagos */
@@ -245,7 +275,7 @@ h4{
 @media only screen and (min-width: 481px) and (max-width: 978px){
     .esquema{
         background-color: rgb(82, 144, 201);
-        height: 400px;
+        height: 370px;
     }
     .gridItem{
         width: auto;
@@ -332,4 +362,15 @@ footer a{
 
 .footNav p{
     color: aliceblue
+}
+
+/* =======pagina de recursos====== */
+
+.recurso{
+    text-align: center;
+}
+
+.recursos1, .recursos2{
+    padding: 50px 0 30px 0;
+    background-color: rgb(255, 198, 4);
 }

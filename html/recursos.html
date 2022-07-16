@@ -4,100 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECURSOS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css propio -->
+    <link rel="stylesheet" href="../style.css">
+    <title>Asesor Online</title>
 </head>
 <body>
     <!--barra de navegacion-->
     <header>
-        <a href="../index.html"><img src="../media/logo.png" class="logo" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="subscripcion.html">SUBSCRIPCION</a></li>
-                <li><a href="recursos.html">RECURSOS</a></li>
-                <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  navEstilo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../media/logo.png" alt="logo" class="img-fluid" width="100" height="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="subscripcion.html">Subscripcion</a>
+                        <a class="nav-link" href="recursos.html">Recursos</a>
+                        <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid">
         <!--recursos-->
-        <div class="recursos">
-            <h1>Recursos</h1>
-            <p>Bienvenido a la página de descargas de nuestro sitio Recursos Online. Nuestro equipo ha estado creando planes de trabajo para llevar a cabo en línea durante muchos años.¡Estos son algunos de los recursos reales que puedes encontrar en tus cuentas de Recursos Online! Hemos incluido material extra en muchas de nuestras categorías.
-            ¿Qué hace que nuestros planes de trabajo sean diferentes? En primer lugar, se trata de un enfoque dirigido por al profesional. Estas descargas están diseñadas para ser dirigidas en tiempo real. En segundo lugar, creamos estos recursos son específicamente para trabajar con profesionales del mismo ámbito. Disfruta y comparte con tus colegas.</p>
-            <div class="imagenFondo">
-                <img src="../media/imagenFondo.png" alt="imagenFondo">
+        <div class="row recursos">
+            <div class="col-lg-12 col-md-12 col-xs-1">
+                <h1>Recursos</h1>
             </div>
         </div>
-        <div class="gridRecursos">
+        <div class="row descripcionRecursos">
+                <p>Bienvenido a la página de descargas de nuestro sitio Recursos Online. Nuestro equipo ha estado creando planes de trabajo para llevar a cabo en línea durante muchos años.¡Estos son algunos de los recursos reales que puedes encontrar en tus cuentas de Recursos Online! Hemos incluido material extra en muchas de nuestras categorías.
+                ¿Qué hace que nuestros planes de trabajo sean diferentes? En primer lugar, se trata de un enfoque dirigido por al profesional. Estas descargas están diseñadas para ser dirigidas en tiempo real. En segundo lugar, creamos estos recursos son específicamente para trabajar con profesionales del mismo ámbito. Disfruta y comparte con tus colegas.</p>
+        </div>
+        <div class="row imagenFondo">
+                <img src="../media/imagenFondo.png" alt="imagenFondo">
+        </div>
+        
+        <!-- <div class="row gridRecursos"> --> <!-- lo estoy desactivando porque voy a intentar hacerlo con los recursos uno por uno -->
 <!--             <h3>Buscar recursos</h3> esto se lo agregare despues
             <textarea name="barraDeBusqueda" id="barraDeBusqueda" cols="60" rows="2"></textarea> -->
-            <div class="recurso recurso1">
+
+        <!-- fila 1 de recursos -->
+        <div class="row recursos1">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso1">
                 <h3>Recurso 1</h3>
-                <img src="../media/recursoImagen1.png" alt="recursoImagen1">
-                <div class="descripcionRecurso1">
-                    <p>Uno no puede hacer todo el trabajo solo.</p>
-                </div>
+                <img src="../media/recursoImagen1.png" class="img-fluid" alt="recursoImagen1">
+                <p>Uno no puede hacer todo el trabajo solo.</p>
             </div>
-            <div class="recurso recurso2">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso2">
                 <h3>Recurso 2</h3>
-                <img src="../media/recursoImagen2.png" alt="recursoImagen2">
-                <div class="descripcionRecurso2">
-                    <p>Recurso para niveles iniciales.</p>
-                </div>
+                <img src="../media/recursoImagen2.png" class="img-fluid" alt="recursoImagen2">
+                <p>Recurso para niveles iniciales.</p>
             </div>
-            <div class="recurso recurso3">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso3">
                 <h3>Recurso 3</h3>
-                <img src="../media/recursoImagen3.png" alt="recursoImagen3">
-                <div class="descripcionRecurso3">
-                    <p>Actividades para el primer dia de trabajo.</p>
-                </div>
+                <img src="../media/recursoImagen3.png" class="img-fluid" alt="recursoImagen3">
+                <p>Actividades para el primer dia de trabajo.</p>
             </div>
-            <div class="recurso recurso4">
+        </div>
+        <!-- fila 2 de recursos -->
+        <div class="row recursos2">
+            <div class=" col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso4">
                 <h3>Recurso 4</h3>
-                <img src="../media/recursoImagen4.png" alt="recursoImagen4">
-                <div class="descripcionRecurso4">
-                    <p>Actividades para trabajar habilidades integrativas.</p>
-                </div>
+                <img src="../media/recursoImagen4.png" class="img-fluid" alt="recursoImagen4">
+                <p>Actividades para trabajar habilidades integrativas.</p>
             </div>
-            <div class="recurso recurso5">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso5">
                 <h3>Recurso 5</h3>
-                <img src="../media/recursoImagen5.png" alt="recursoImagen5">
-                <div class="descripcionRecurso5">
-                    <p>Este recursos funcionan en todas las plataformas.</p>
-                </div>
+                <img src="../media/recursoImagen5.png" class="img-fluid"  alt="recursoImagen5">
+                <p>Este recursos funcionan en todas las plataformas.</p>
             </div>
-            <div class="recurso recurso6">
+            <div class="col col-12 col-lg-4 col-md-4 col-sm-3 recurso recurso6">
                 <h3>Recurso 6</h3>
-                <img src="../media/recursoImagen6.png" alt="recursoImagen6">
-                <div class="descripcionRecurso6">
-                    <p>Recurso perfecto para profesionales.</p>
-                </div>
-            </div>
+                <img src="../media/recursoImagen6.png" class="img-fluid" alt="recursoImagen6">
+                <p>Recurso perfecto para profesionales.</p>
+            </div>    
         </div>
     </main>
     <!--footer-->
     <footer>
-        <nav class="footerNav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="subscripcion.html">Subscripcion</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="redesSociales">
-                <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
+        <div class="row ">
+            <div class="col footNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/subscripcion.html">Subscripcion</a></li>
+                    <li><a href="html/recursos.html">Recursos</a></li>
+                    <li><a href="html/sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="redesSociales">
+                    <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
+                </div>
+            </nav>
+                <p>@2022 Recursos Online</p>
             </div>
-        </nav>
-        <p>@2022 Recursos Online</p>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
