@@ -92,7 +92,7 @@ h1{
 
 .videoRecursos{
     padding-bottom: 25px;
-    padding-right: 34px;
+    padding-right: 15px;
 }
 @media only screen and (max-width: 575){
     
@@ -145,6 +145,7 @@ iframe{
 
 .testimonios .nombreTesti{
     font-size: 1.4rem;
+    margin-top: -10px;
 }
 
 .testimonios .nombreTesti2{
@@ -152,8 +153,8 @@ iframe{
     margin-top: -10px;
 }
 
-.testimonios .nombreTesti{
-    font-size: 1.4rem;
+.testimonios .nombreTesti3{
+    font-size: 1.3rem;
     margin-top: -10px;
 }
 
@@ -163,15 +164,15 @@ iframe{
         width: 250px;
     } */
     .testimonios img{
-        height: 240px;
-        width: 240px;
+        height: 256px;
+        width: 266px;
         padding: 5px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .testimonios img{
-        height: 200px;
+        height: 210px;
         width: 200px;
     } 
 }
@@ -382,5 +383,45 @@ footer a{
 
 .recursos1, .recursos2{
     padding: 50px 0 30px 0;
-    background-color: rgb(255, 198, 4);
+}
+
+.descripcionRecursos p{
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+}
+
+/* .carousel-inner img{
+    padding: 30px 80px 40px 80px;
+}
+ */
+
+.carousel-caption h5{
+    font-size: 6rem;
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-caption h5{
+        font-size: 4rem;
+    }
+}
+
+#carouselExampleCaptions .carousel-item:before{
+    content:"";
+    background-image: linear-gradient(to bottom, transparent, rgba(41, 14, 14, 0.5));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+} 
+
+.colorBoton{
+    background-color: rgb(104, 182, 255);
+    border: 2px solid black;
+}
+
+.card-img-top{
+    padding: 20px;
 }
